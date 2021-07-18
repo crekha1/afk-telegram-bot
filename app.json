@@ -1,0 +1,31 @@
+{
+  "name": "AFK-Bot",
+  "logo": "https://telegra.ph/file/36ff1b571aa11df5812de.jpg",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "keywords": ["brb", "afk", "telegram"],
+  "repository": "https://github.com/crekha1/afk-telegram-bot",
+  "stack": "heroku-20",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "heroku/python"
+   }   
+  ],        
+  "env": {
+    "DATABASE_URL": {
+      "description": "MONGO-DB",
+      "required": true
+    },
+    "TOKEN": {
+      "description": "A bot token from @BotFather",
+      "required": true
+    },
+    "CHAT_ID": {
+      "description": "ok vai",
+      "required": true,
+      "value": "10"
+    }
+  }
+}

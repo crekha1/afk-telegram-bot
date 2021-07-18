@@ -20,4 +20,4 @@ A simple AFK Python Telegram bot for one chat running
 
 ### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/insidescode/DaisyXMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/crekha1/afk-telegram-bot)

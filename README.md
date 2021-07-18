@@ -16,3 +16,8 @@ A simple AFK Python Telegram bot for one chat running
 3. Add "Heroku Postgres" add-on to your app.
 4. Go to Heroku dashboard > your app name > settings > reveal config vars and add the config vars (`CHAT_ID`, `TOKEN`).
 5. Deploy your app and you are good to go. 
+
+
+### 💜 Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/insidescode/DaisyXMusic)

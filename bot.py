@@ -100,8 +100,8 @@ Reason: <b>{}</b>
 
 # Respond to updates coming from private chats
 def private(update, context):
-	reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text = "🛠 Bot Repository", url = "https://github.com/pranaovs/afk-telegram-bot")]])
-	update.message.reply_text("Hello. This AFK bot has no functions in PM.\nTo use AFK Features in your groups, you must fork it. Detailed guide given in bot repository.", reply_markup = reply_markup)
+	reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text = "UPDATES", url = "https://t.me/Zer0ByteOfficial")]])
+	update.message.reply_text("Hello. This AFK bot has no functions in PM.\nTo use AFK Features in your groups, you must make your own simple.", reply_markup = reply_markup)
 
 def main(update, context):
 	# If the user had a username
@@ -118,8 +118,8 @@ def new_member(update, context):
 	for member in update.message.new_chat_members:
 		# If the chat wasn't the one that the bot is dedicated to
 		if update.message.chat.id != int(os.environ.get("CHAT_ID")):
-			caption = """This bot isn't made for this group.\nTo use AFK features, you will need to host your own bot.\nDetailed instructions given in Bot's repository.\n\nIf you don't wish to clone and self host, you can try @MissStella_bot instead, which has integrated AFK features."""
-			reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text = "🛠 Bot Repository", url = "https://github.com/pranaovs/afk-telegram-bot")]])
+			caption = """This bot isn't made for this group.\nTo use AFK features, you will need to make your own bot simple.\nDetailed instructions is given in support chat.\n\nIf you make your own bot then FUCK OFF!"""
+			reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text = "UPDATES", url = "https://t.me/Zer0ByteOfficial")]])
 			
 			# Say something
 			update.message.reply_document("https://raw.githubusercontent.com/pranaovs/afk-telegram-bot/master/files/gif/leave/" + str(random.randrange(1,3)) + ".gif", caption = caption, reply_markup = reply_markup)
